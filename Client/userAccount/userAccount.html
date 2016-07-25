@@ -26,30 +26,28 @@
    <h3> List an Item </h3>
    <form class="form-horizontal">
      <div class="form-group">
-
       <div class="col-sm-5 col-sm-offset-4-right">
         <select ng-model="list.category" class="form-control listingClass" ng-init="list.category = addCategory[0].category" >
-       <option ng-repeat="y in addCategory" value="{{y.category}}">
+        <option ng-repeat="y in addCategory" value="{{y.category}}">
          {{y.category}}
-       </option>
-      </select>
-     </div>
-
+        </option>
+       </select>
       </div>
-
+     </div>
+<!-- END OF CATEGORY SELECT -->
+<!-- BEGIN ITEM NAME FORM -->
      <div class="form-group">
       <div class="col-sm-5 col-sm-offset-4-right">
         <input type="text" ng-model="list.name" placeholder="Item Name" class="form-control"></input>
       </div>
      </div>
-
-
+<!-- END OF ITEM NAME FORM -->
      <div class="form-group">
       <div class="col-sm-5 col-sm-offset-4-right">
          <textarea type="text" ng-model="list.description"  placeholder="Description" class="description form-control"></textarea>
       </div>
      </div>
-
+<!-- END OF ITEM NAME FORM -->
      <div class="form-group">
       <div class="col-sm-5 col-sm-offset-4-right">
         <input ng-model="list.price" placeholder="Price" class="form-control"></input>
